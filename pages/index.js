@@ -1,10 +1,11 @@
-import { SliceZone } from '@prismicio/react';
 import Head from 'next/head';
+import LogosCallout from '../components/LogosCallout';
 import Navbar from '../components/Navbar';
-import { createClient } from '../prismicio';
-import { components } from '../slices/';
+import CounterCallout from '../components/CounterCallout';
+import Hero from '../components/Hero';
+import ScrollZoomSnippet from '../components/ScrollZoomImages';
 
-export default function Home({ page }) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -14,19 +15,12 @@ export default function Home({ page }) {
       </Head>
       <Navbar />
       <main>
-        <SliceZone slices={page.data.slices} components={components} />
+        <Hero />
+        <ScrollZoomSnippet />
+
+        <CounterCallout />
+        <LogosCallout />
       </main>
     </div>
   );
-}
-
-export async function getStaticProps({ locale, previewData }) {
-  const client = createClient({ previewData });
-  const page = await client.getByUID('page', 'home', { lang: locale });
-
-  return {
-    props: {
-      page,
-    },
-  };
 }

@@ -1,9 +1,0 @@
-import MyComponent from '../../../../slices/LogosCalllout';
-
-export default {
-  title: 'slices/LogosCalllout'
-}
-
-
-export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"logo":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.prismic.io/jqq-demo-1/e2f57fe2-1616-4f4f-af3f-75dbe7fc44da_twilio-white.png"}}],"primary":{"title":[{"type":"heading2","text":"Largest","spans":[]}],"quoteImage":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1587653915936-5623ea0b949a"},"quoteName":"JAMES Q QUICK","quoteText":"mysterious","icon1":"postgresql","quoteTitle":"COOL CONTENT CREATOR","body":"With Netlify, now our teams deploy changes 10-15× a day."},"slice_type":"icon_line_thing","id":"_Default"}} />
-_Default.storyName = ''

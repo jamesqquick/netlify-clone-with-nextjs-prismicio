@@ -1,14 +1,8 @@
-import { PrismicRichText } from '@prismicio/react';
 import React, { useEffect, useRef, useState } from 'react';
-import useOnScreen from '../../hooks/useOnScreen';
+import useOnScreen from '../hooks/useOnScreen';
 import CountUp from 'react-countup';
 
-/**
- * @typedef {import("@prismicio/client").Content.CounterCalloutSlice} CounterCalloutSlice
- * @typedef {import("@prismicio/react").SliceComponentProps<CounterCalloutSlice>} CounterCalloutProps
- * @param { CounterCalloutProps }
- */
-const CounterCallout = ({ slice }) => {
+const CounterCallout = () => {
   const counterSectionRef = useRef();
   const isVisible = useOnScreen(counterSectionRef);
   const [done, setDone] = useState();
@@ -25,18 +19,18 @@ const CounterCallout = ({ slice }) => {
       {(isVisible || done) && (
         <CountUp
           className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-800 via-blue-800 to-purple-800 tabular-nums"
-          start={slice.primary.number * 0.98}
+          start={3000000 * 0.98}
           duration={1}
-          end={slice.primary.number}
+          end={3000000}
           suffix="+"
           separator=","
           decimal=","
         />
       )}
 
-      <span className="text-3xl mb-0">
-        <PrismicRichText field={slice.primary.body} />
-      </span>
+      <p className="text-3xl mb-0">
+        "developers & businesses ship faster on Netlify."
+      </p>
     </div>
   );
 };

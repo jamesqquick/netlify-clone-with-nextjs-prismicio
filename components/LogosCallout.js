@@ -1,25 +1,17 @@
 import React from 'react';
-import { PrismicRichText } from '@prismicio/react';
-import Pattern from '../../components/Pattern';
+import Pattern from './Pattern';
 import Image from 'next/image';
-import IconLineThing from '../../components/LineItemThingy';
-/**
- * @typedef {import("@prismicio/client").Content.IconLineThingSlice} IconLineThingSlice
- * @typedef {import("@prismicio/react").SliceComponentProps<IconLineThingSlice>} IconLineThingProps
- * @param { IconLineThingProps }
- */
-const LogosCallout = ({ slice }) => {
+import IconLineThing from './LineItemThingy';
+const LogosCallout = () => {
   return (
     <div
       className="rounded-xl text-white text-center bg-gradient-to-r from-teal-800 
-    via-blue-800 to-purple-800 py-20 relative -z-20"
+      via-blue-800 to-purple-800 py-20 relative -z-20"
     >
-      <span className="text-6xl font-bold ">
-        <PrismicRichText field={slice.primary.title} />
-      </span>
-      <IconLineThing icon1={slice.primary.icon1} />
+      <h2 className="text-6xl font-bold translate-y-20">Make your work flow</h2>
+      <IconLineThing />
       <div className="max-w-2xl mx-auto mb-20">
-        <p className="text-4xl -translate-y-20">"{slice.primary.body}"</p>
+        <p className="text-4xl -translate-y-20">{`"With Netlify, now our teams deploy changes 10-15× a day."`}</p>
         <div className="flex gap-4 max-w-xl mx-auto justify-center items-center">
           <Image
             src="/headshot.jpeg"
@@ -29,20 +21,18 @@ const LogosCallout = ({ slice }) => {
             alt="Headshot from..."
           />
           <div className="text-left">
-            <p> {slice.primary.quoteName},</p>
-            <p> {slice.primary.quoteTitle}</p>
+            <p> HARRISON HARNISCH,</p>
+            <p> PRINCIPAL SOFTWARE ENGINEER, TWILIO</p>
           </div>
         </div>
       </div>
       <div className="flex gap-20 justify-center fill-white items-center">
-        {slice?.items?.map((item, i) => (
-          <Image
-            src={item.logo.url}
-            height={40}
-            width={160}
-            alt={item.logo.alt}
-          />
-        ))}
+        <Image
+          src="/netlify-white.png"
+          height={40}
+          width={160}
+          alt="Netlify Logo"
+        />
         <Image
           src="/prismic-white.svg"
           height={40}
@@ -66,5 +56,4 @@ const LogosCallout = ({ slice }) => {
     </div>
   );
 };
-
 export default LogosCallout;

@@ -1,21 +1,18 @@
 import React from 'react';
-import { PrismicRichText } from '@prismicio/react';
-import HomepageIcon from '../../components/HomepageIcon';
+import HomepageIcon from './HomepageIcon';
 import Image from 'next/image';
 
-/**
- * @typedef {import("@prismicio/client").Content.HeroSlice} HeroSlice
- * @typedef {import("@prismicio/react").SliceComponentProps<HeroSlice>} HeroProps
- * @param { HeroProps }
- */
-const Hero = ({ slice }) => {
+const Hero = () => {
   return (
     <section className="py-10 px-10 min-h-screen flex justify-center flex-col">
       <div className="relative mx-auto max-w-4xl z-10">
-        <PrismicRichText field={slice.primary.title} />
-        <div class="mb-8">
-          <PrismicRichText field={slice.primary.body} />
-        </div>
+        <h1 className="text-6xl font-bold text-center mb-6">
+          Bring it all together
+        </h1>
+        <p className="text-xl text-center max-w-xl mx-auto mb-8 leading-8 tracking-wider">
+          The fastest way to combine your favorite tools and APIs to build the
+          fastest sites, stores, and apps for the web.
+        </p>
 
         <div className="w-[110px] h-20 bg-gray-100 rounded absolute -top-[60%] -left-[30%]"></div>
         <div className="w-[110px] h-20 bg-gray-100 rounded absolute -top-[80px] -right-60"></div>
@@ -25,17 +22,14 @@ const Hero = ({ slice }) => {
         <div className="w-[110px] h-20 bg-gray-100 rounded absolute -bottom-[280px] -left-[20px]"></div>
       </div>
       <div className="flex gap-4 justify-center">
-        <a
-          href="slice.primary.primaryButtonLink"
-          className="bg-blue-700 text-blue-100 rounded py-[6px] px-5"
-        >
-          {slice.primary.primaryButtonText}
+        <a href="/" className="bg-blue-700 text-blue-100 rounded py-[6px] px-5">
+          Start building for free
         </a>
         <a
-          href="slice.primary.secondaryButtonLink"
+          href="/"
           className="bg-transparent border border-blue-700 text-blue-700 rounded py-[6px] px-5"
         >
-          {slice.primary.secondaryButtonText}
+          Request demo
         </a>
       </div>
       <div className="grid gap-3 max-w-xl absolute -right-[120px]">
@@ -103,8 +97,8 @@ const Hero = ({ slice }) => {
 
       <div className="flex flex-col gap-4 absolute bottom-4 -left-20">
         <HomepageIcon
-          src={`/logo-${slice.primary.icon1}.svg`}
-          alt={`${slice.primary.icon1} Logo`}
+          src={`/logo-vuejs.svg`}
+          alt={`Vuejs Logo`}
           size={35}
           className="ml-[90px]"
         />

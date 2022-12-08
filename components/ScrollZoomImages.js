@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import useScrollPosition from '../../hooks/useScrollPosition';
+import useScrollPosition from '../hooks/useScrollPosition';
 import Image from 'next/image';
 
-/**
- * @typedef {import("@prismicio/client").Content.ScrollZoomImagesSlice} ScrollZoomImagesSlice
- * @typedef {import("@prismicio/react").SliceComponentProps<ScrollZoomImagesSlice>} ScrollZoomImagesProps
- * @param { ScrollZoomImagesProps }
- */
 const ScrollZoomImages = ({ slice }) => {
   const [topImageTranslateY, setTopImageTranslateY] = useState(-200);
   const [bottomImageLeft, setBottomImageLeft] = useState(100);
@@ -50,17 +45,17 @@ const ScrollZoomImages = ({ slice }) => {
         className="relative"
       >
         <Image
-          src={slice.primary.topImage.url}
+          src="/keyboard.jpeg"
           height="437"
           width="700"
-          alt={slice.primary.topImage.alt}
+          alt="Keyboard"
           className=" z-50 rounded"
         />
         <Image
-          src={slice.primary.bottomImage.url}
+          src="/code.jpeg"
           width={500}
           height={200}
-          alt={slice.primary.bottomImage.alt}
+          alt="Code snippet"
           className="bottom-10 -translate-y-[10%] -z-10 absolute"
           style={{
             left: `${bottomImageLeft}px`,

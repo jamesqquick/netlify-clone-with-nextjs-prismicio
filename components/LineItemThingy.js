@@ -65,7 +65,7 @@ const IconLineThing = ({ icon1 }) => {
             d="M0 8a8 8 0 0 1 8-8h32a8 8 0 0 1 8 8v32a8 8 0 0 1-8 8H8a8 8 0 0 1-8-8V8Z"
             fill="url(#home-workflow-icon-background)"
           ></path>{' '}
-          <image href={`/logo-${icon1}.svg`} alt="" x="8.5" y="8.5"></image>
+          <image href={`/logo-shopify.svg`} alt="" x="8.5" y="8.5"></image>
         </g>
         <g transform="translate(928, 220.5)">
           <path

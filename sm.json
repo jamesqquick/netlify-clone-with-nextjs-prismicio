@@ -1,6 +1,0 @@
-{
-  "apiEndpoint": "https://jqq-demo-1.prismic.io/api/v2",
-  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
-  "libraries": ["@/slices"],
-  "_latest": "0.5.2"
-}
