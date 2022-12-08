@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a demo clone of the Netlify homepage using Next.js and Prismic Slice Machine. It is NOT complete. It is NOT perfect. It is for demo/tutorial purposes only :)
 
 ## Getting Started
 

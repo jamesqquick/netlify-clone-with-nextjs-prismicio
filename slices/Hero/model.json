@@ -1,0 +1,76 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Hero",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "primaryButtonText": {
+          "type": "Text",
+          "config": {
+            "label": "Primary Button Text",
+            "placeholder": ""
+          }
+        },
+        "primaryButtonLink": {
+          "type": "Text",
+          "config": {
+            "label": "Primary Button Link",
+            "placeholder": ""
+          }
+        },
+        "secondaryButtonText": {
+          "type": "Text",
+          "config": {
+            "label": "Secondary Button Text",
+            "placeholder": ""
+          }
+        },
+        "secondaryButtonLink": {
+          "type": "Text",
+          "config": {
+            "label": "Secondary Button Link",
+            "placeholder": ""
+          }
+        },
+        "icon1": {
+          "type": "Select",
+          "config": {
+            "label": "icon1",
+            "placeholder": "",
+            "options": [
+              "react",
+              "vuejs"
+            ]
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

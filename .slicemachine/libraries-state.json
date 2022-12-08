@@ -1,0 +1,427 @@
+{
+  "slices": {
+    "components": {
+      "counter_callout": {
+        "library": "slices",
+        "id": "counter_callout",
+        "name": "CounterCallout",
+        "description": "CounterCallout",
+        "model": {
+          "id": "counter_callout",
+          "type": "SharedSlice",
+          "name": "CounterCallout",
+          "description": "CounterCallout",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "CounterCallout",
+              "primary": {
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Body",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "number": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Number",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "body": [
+                {
+                  "type": "paragraph",
+                  "text": "Sit ex veniam do laboris Lorem nisi in ullamco duis dolore mollit aute. Irure cillum sunt cupidatat commodo ullamco exercitation Lorem consectetur proident labore cillum non commodo irure anim.",
+                  "spans": []
+                }
+              ],
+              "number": 4000000
+            },
+            "slice_type": "counter_callout"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "hero": {
+        "library": "slices",
+        "id": "hero",
+        "name": "Hero",
+        "description": "Hero",
+        "model": {
+          "id": "hero",
+          "type": "SharedSlice",
+          "name": "Hero",
+          "description": "Hero",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Hero",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Body",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "primaryButtonText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Primary Button Text",
+                    "placeholder": ""
+                  }
+                },
+                "primaryButtonLink": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Primary Button Link",
+                    "placeholder": ""
+                  }
+                },
+                "secondaryButtonText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary Button Text",
+                    "placeholder": ""
+                  }
+                },
+                "secondaryButtonLink": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary Button Link",
+                    "placeholder": ""
+                  }
+                },
+                "icon1": {
+                  "type": "Select",
+                  "config": {
+                    "label": "icon1",
+                    "placeholder": "",
+                    "options": [
+                      "react",
+                      "vuejs"
+                    ]
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Pupil",
+                  "spans": []
+                }
+              ],
+              "body": [
+                {
+                  "type": "paragraph",
+                  "text": "Non velit voluptate officia duis consectetur.",
+                  "spans": []
+                }
+              ],
+              "primaryButtonText": "area",
+              "primaryButtonLink": "read",
+              "secondaryButtonText": "experiment",
+              "secondaryButtonLink": "leaving",
+              "icon1": "react"
+            },
+            "slice_type": "hero"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/jamesquick/code/delete-me/prismic-demo/.slicemachine/assets/slices/Hero/default/preview.png",
+            "width": 1280,
+            "height": 800
+          }
+        }
+      },
+      "icon_line_thing": {
+        "library": "slices",
+        "id": "icon_line_thing",
+        "name": "LogosCalllout",
+        "description": "IconLineThing",
+        "model": {
+          "id": "icon_line_thing",
+          "type": "SharedSlice",
+          "name": "LogosCalllout",
+          "description": "IconLineThing",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "IconLineThing",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "quoteImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "quoteImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "quoteName": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Quote Name",
+                    "placeholder": ""
+                  }
+                },
+                "quoteText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Quote Text",
+                    "placeholder": ""
+                  }
+                },
+                "icon1": {
+                  "type": "Select",
+                  "config": {
+                    "label": "icon1",
+                    "placeholder": "",
+                    "options": [
+                      "shopify",
+                      "vuejs",
+                      "nextjs",
+                      "postgresql"
+                    ]
+                  }
+                },
+                "quoteTitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Quote Title",
+                    "placeholder": ""
+                  }
+                },
+                "body": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Body",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "logo": {
+                  "type": "Image",
+                  "config": {
+                    "label": "logo",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.prismic.io/jqq-demo-1/e2f57fe2-1616-4f4f-af3f-75dbe7fc44da_twilio-white.png"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Largest",
+                  "spans": []
+                }
+              ],
+              "quoteImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a"
+              },
+              "quoteName": "JAMES Q QUICK",
+              "quoteText": "mysterious",
+              "icon1": "postgresql",
+              "quoteTitle": "COOL CONTENT CREATOR",
+              "body": "With Netlify, now our teams deploy changes 10-15× a day."
+            },
+            "slice_type": "icon_line_thing"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "scroll_zoom_images": {
+        "library": "slices",
+        "id": "scroll_zoom_images",
+        "name": "ScrollZoomImages",
+        "description": "ScrollZoomImages",
+        "model": {
+          "id": "scroll_zoom_images",
+          "type": "SharedSlice",
+          "name": "ScrollZoomImages",
+          "description": "ScrollZoomImages",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ScrollZoomImages",
+              "primary": {
+                "topImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Top Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "bottomImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Bottom Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "icon1": {
+                  "type": "Select",
+                  "config": {
+                    "label": "icon1",
+                    "placeholder": "Name of the icon",
+                    "options": [
+                      "contentful",
+                      "shopify",
+                      "algolia",
+                      "react",
+                      "vuejs"
+                    ]
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "topImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef"
+              },
+              "bottomImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+              },
+              "icon1": "vuejs"
+            },
+            "slice_type": "scroll_zoom_images"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}
